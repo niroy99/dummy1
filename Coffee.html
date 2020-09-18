@@ -5,33 +5,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+     ul {
+    list-style-type: none;
+    margin-top: 0;
+    padding-left: 30;
+    overflow: hidden;
+    background-color: rgb(189, 185, 185);
+    color: black;
+    
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    padding: 8px;
+    text-decoration:none;
+  }
+  footer{
+
+width: 100%;
+background: black;
+color: white;
+bottom:0;
+margin:0;
+padding: 0;
+position: fixed;
+text-align: center;
+}
+    
+    </style>
     
 </head>
+<header>
 
+        <ul>
+            <li><a href="#home">Home</a> | </li>
+            <li><a href="C:\Personal\generic-hipster-coffee\Menu.html">Menu</a> | </li>
+            <li><a href="C:\Personal\generic-hipster-coffee\Coffee.html">Coffee</a> | </li>
+            <li><a href="C:\Personal\generic-hipster-coffee\Our Story.html">Our Story</a> |</li>
+    
+        </ul>
+  
+       
+    </div>
+    
+    
+    </header>
 <body>
     <h1>Coffee</h1>
     <p>We work with specialty coffee from current crops which is carefully roasted. Our coffee is fruity, juicy and never boring. We bring you the best from leading european specialty roasteries, currently mostly from Square Mile Coffee Roasters, a multi award winning coffee roasting company based in East London. 
             You can currently buy these beans in 350g bags 
             </p>
 
-            <h2>Quejina (Guatemala) </h2>
-            <p>redcurrant/honeysuckle/juicy 
-                    Fruity redcurrant and sweet honeysuckle flavours. An incredibly juicy coffee which we struggled to decide on the right berry descriptor, but raspberry, blackberry and blueberry were also in the running! 
-                    </p>
-                    <h2>Mormora (Ethiopia) </h2>
-                    <p>blackberry/orange/silky 
-                            Fruity, sweet notes of dried mango, strawberry and passionfruit sit alongside a delicious creamy mouthfeel making this a tasty summer Ethiopian, hot or cold. 
-                            
-                        </p>
-                        <h2>1Kamwangi (Kenya) </h2>
-                        <p>blackberry/orange/silky 
-                                This is one fruit filled espresso! From citrus fruits, such as orange, grapefruit and clementine, to berries of the black, blue and red variety, this is fruit turned up to 11, all wrapped up in a silky smooth body. 
-                                </p>
-                             <h2>Decaf Espresso (El Salvador) </h2>
+            <div class="row">
+                    <div class="column">
+                      <img src="smcr-decaf-espresso.jpg" alt="decaf" style="width:100%">
+                      <h2>Quejina (Guatemala) </h2>
+                      <p>redcurrant/honeysuckle/juicy 
+                              Fruity redcurrant and sweet honeysuckle flavours. An incredibly juicy coffee which we struggled to decide on the right berry descriptor, but raspberry, blackberry and blueberry were also in the running! 
+                              </p>
+                    </div>
+                    <div class="column">
+                      <img src="smcr-kamwangi.jpg" alt="kamwangi" style="width:100%">
+                      <h2>Mormora (Ethiopia) </h2>
+                      <p>blackberry/orange/silky 
+                              Fruity, sweet notes of dried mango, strawberry and passionfruit sit alongside a delicious creamy mouthfeel making this a tasty summer Ethiopian, hot or cold. 
+                              
+                          </p>
+                    </div>
+                    <div class="row">
+                    <div class="column">
+                      <img src="smcr-mormora.jpg" alt="mormora" style="width:100%">
+                      <h2>1Kamwangi (Kenya) </h2>
+                      <p>blackberry/orange/silky 
+                              This is one fruit filled espresso! From citrus fruits, such as orange, grapefruit and clementine, to berries of the black, blue and red variety, this is fruit turned up to 11, all wrapped up in a silky smooth body. 
+                              </p>
+                    </div>
+                    <div class="column">
+                            <img src="smcr-quejina.jpg" alt="smcr-quejina" style="width:100%">
+                            <h2>Decaf Espresso (El Salvador) </h2>
                              <p>caramel/apple/cinnamon 
                                     This is a single origin espresso from San Carlos in El Salvador, think sweet caramel and apple notes alongside sprinklings of cinnamon in the finish. 
                                     </p>
+                        </div>
+                    
+                  </div>
+
+           
 
     
 </body>
+
+<!-- adding footer -->
+<footer>
+        <p>#HIPSTERMAKECOFFEE<br>
+            <a href="#teitter">Twitter and Instagram </a></p>
+
+
+</footer>
 </html>
